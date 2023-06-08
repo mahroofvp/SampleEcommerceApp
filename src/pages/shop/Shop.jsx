@@ -8,10 +8,10 @@ const Shop = () => {
         <div className="shopTitle">
             <h1>Gadget Gallery</h1>
         </div>
-        <div className="products">
+        <div className="products" >
             {PRODUCTS.map((data)=>(
-                <Product data={data}/>
-            )
+                <Product data={data} key={data.id}/>
+            ) 
             )}
             </div>
     </div>
