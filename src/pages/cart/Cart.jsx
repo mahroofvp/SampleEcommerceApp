@@ -6,7 +6,7 @@ import './cart.css'
 
 
 const Cart = () => {
-  const {cartItems} = useContext(ShopContext)
+  const {cartItems, getTotalCartAmount} = useContext(ShopContext)
   return (
     <div className='cart'>
       <div>
@@ -21,9 +21,12 @@ const Cart = () => {
       </div>
 
       <div className="checkout">
-        <p> Subtotal: $</p>
-        <button> Continue Shopping</button>
+        <p> Subtotal: {getTotalCartAmount()}</p>
+        <div className='cart-black-btns'>
+
+        <button > Continue Shopping</button>
         <button> Cheakout </button>
+        </div>
       </div>
 
     </div>

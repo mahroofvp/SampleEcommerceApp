@@ -1,10 +1,11 @@
 import React, { useContext } from 'react'
 import { ShopContext } from '../../context/ShopContext'
 
-const Product = ({data}) => {
+const SingleProduct = ({data}) => {
   const {addToCart, cartItems} = useContext(ShopContext)
     const {id, productName, price, productImage }=data
     const cartItemAmount = cartItems[id];
+    
   return (
     <div className='product' >
         <div className='img-div'>
@@ -22,4 +23,4 @@ const Product = ({data}) => {
   )
 }
 
-export default Product
+export default SingleProduct
