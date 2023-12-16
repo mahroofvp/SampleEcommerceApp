@@ -15,7 +15,7 @@
   }
  
   .links {
-    margin-right: 50px;
+    margin-right: 15px;
     display: flex;
     align-items: center;
   }
@@ -28,7 +28,6 @@
   }
   .cart-icon{
     position: relative;
-
   }
  
   .badge{

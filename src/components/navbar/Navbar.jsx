@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate} from 'react-router-dom'
 import { BsCart3 } from 'react-icons/bs'
 import './navbar.css'
 import { useContext } from 'react'
@@ -9,7 +9,8 @@ import { PRODUCTS } from '../../products'
 
 const Navbar = () => {
 const {cartItems}= useContext(ShopContext)
-
+const navigate = useNavigate();
+const isHomeRoute = window.location.pathname === '/'
 let total = Object.values(cartItems).reduce((acc,val)=> acc+val,0)
 
 return (
@@ -17,7 +18,7 @@ return (
       <div><Link to="/" style={{textDecoration:"none", opacity:"80%"}}><h1 >Gadget Gallery</h1></Link></div>
         <div className="links">
            
-            <Link to="/" > Shop </Link>
+          { !isHomeRoute && <Link to="/" > Shop </Link>}
             <Link to="/cart" >
               
            {total>0?<div className='badge'> {total}</div>:null }
