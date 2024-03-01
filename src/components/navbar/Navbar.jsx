@@ -22,7 +22,7 @@ return (
             <Link to="/cart" >
               
            {total>0?<div className='badge'> {total}</div>:null }
-            <BsCart3 className='cart-icon' size={32}/>
+            <BsCart3 style={{height:"25px", width:"25px"}} className='cart-icon' size={32}/>
              
              </Link>
             

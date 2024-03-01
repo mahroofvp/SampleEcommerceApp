@@ -1,0 +1,33 @@
+.slider-main-div{
+    display: flex;
+    padding: 5px;
+    animation: 10s slider  infinite linear;
+    
+}
+.slider-main-div:hover{
+    animation-play-state: paused;
+}
+.slider-container-div{
+    white-space: nowrap;
+}
+
+.slider-img-div{
+    width: 60px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: help;
+    display: inline-block;
+ 
+}
+
+@keyframes slider {
+     from {
+        transform: translateX(0);
+     } to {
+        transform: translateX(-100%);
+
+     }
+    
+}

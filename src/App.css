@@ -1,14 +1,18 @@
 *{
   box-sizing: border-box
 }
+body{
+  background-color:white;
+  color: black;
+}
 .App {
 
   min-width: 100%;
   /* min-height: 100vh; */
   font-family: "Segoe UI", Tahoma, Geneva, Verdana,sans-serif;
-  
  
 }
+
 /* .navbar{
   height: 100% !important;
 } */
