@@ -2,8 +2,8 @@ Gadget Gallery - Electronic Gadgets Ecommerce Web App
 -------------------------------------------------------
 [Gadget Gallery Live Link](https://sample-ecommerce-app.vercel.app/)
 
-Gadget Gallery is a Ecommerce web app it allows you to browse through a some collection of electronic devices
-and you can search for specific items, add products to your cart, and conveniently remove items from your cart. 
+Gadget Gallery is an ecommerce web app that allows you to browse through a collection of electronic devices
+and search for specific items, add products to your cart, and conveniently remove items from your cart. 
 
 > Features
 
