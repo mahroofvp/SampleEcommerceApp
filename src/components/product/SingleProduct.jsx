@@ -10,7 +10,7 @@ const SingleProduct = ({data}) => {
     <div className='product' >
         <div className='img-div'>
 
-        <img  src={productImage} alt="" />
+        <img style={{height:"130px" , width:"140px"}} src={productImage} alt="" />
         </div>
         <div className="description">
             <p>
@@ -18,7 +18,10 @@ const SingleProduct = ({data}) => {
             </p>
             <p>${price}</p>
         </div>
+        <div className='card-btn-div'>
+
         <button  className='addToCartBttn' onClick={()=>addToCart(id)}>Add To Cart {cartItemAmount > 0 && <>({cartItemAmount})</>}</button>
+        </div>
     </div>
   )
 }

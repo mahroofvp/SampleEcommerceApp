@@ -1,7 +1,7 @@
 import { carouselData } from "./carouselData"
 import { useState } from 'react'
 import { IoIosArrowDropleft, IoIosArrowDropright} from "react-icons/io"
-import './carousel.css'
+import './carousel.scss'
 const Carousel = ()=>{
     const [imgId, setImgId] = useState(0)
 

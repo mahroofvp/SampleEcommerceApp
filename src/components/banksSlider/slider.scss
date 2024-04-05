@@ -9,6 +9,9 @@
 }
 .slider-container-div{
     white-space: nowrap;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    
 }
 
 .slider-img-div{

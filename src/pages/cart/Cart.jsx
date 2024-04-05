@@ -2,9 +2,9 @@ import React, { useContext } from 'react'
 import { PRODUCTS } from '../../products'
 import { ShopContext } from '../../context/ShopContext'
 import { CartItem } from '../../components/cartItem/CartItem'
-import './cart.css'
 import emptyCart from '../../assets/bgimg/EmptyCart.png'
 import {useNavigate} from 'react-router-dom'
+import './cart.scss'
 
 
 const Cart = () => {

@@ -1,5 +1,5 @@
 import { sliderData } from "./sliderData"
-import './slider.css'
+import './slider.scss'
 
 const Slider = () => {
     return(

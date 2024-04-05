@@ -2,9 +2,9 @@ import React, { useState } from 'react'
 import { PRODUCTS } from '../../products'
 import {BiSearch} from "react-icons/bi"
 import SingleProduct from '../../components/product/SingleProduct'
-import './shop.css'
 import Carousel from '../../components/carousel/Carousel'
 import Slider from '../../components/banksSlider/Slider'
+import './shop.scss'
 
 
 

@@ -1,10 +1,10 @@
 import React from 'react'
 import { Link, useNavigate} from 'react-router-dom'
 import { BsCart3 } from 'react-icons/bs'
-import './navbar.css'
 import { useContext } from 'react'
 import { ShopContext } from '../../context/ShopContext'
 import { PRODUCTS } from '../../products'
+import './navbar.scss'
 
 
 const Navbar = () => {
