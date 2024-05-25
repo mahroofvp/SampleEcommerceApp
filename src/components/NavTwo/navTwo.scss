@@ -1,0 +1,25 @@
+.nav-two-main-div {
+    height: 26px;
+    ul{
+        display: flex;
+        list-style: none;
+        margin: 5px;
+        margin-left: 5%;
+        padding: 5px;
+
+        li{
+            margin-right: 15px;
+            font-size: small;
+            font-weight: 500;
+            font-family: sans-serif;
+            cursor: pointer;
+        }
+        li:hover{
+            border-bottom: 3px solid;
+            border-bottom-color:#ED921A ;
+        }
+        
+    }
+    
+}
+
