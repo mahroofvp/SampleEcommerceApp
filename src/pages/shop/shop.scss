@@ -106,8 +106,8 @@
   }
   
   .addToCartBttn:hover {
-    background-color: rgb(59, 70, 81);
-    color: rgb(234, 233, 240);
+    border-color: #ED921A;
+    // color: rgb(234, 233, 240);
     cursor: pointer;
   }
 
@@ -133,8 +133,8 @@
  }
  .search-icon{
   
-  margin-top: -50px;
-  margin-left: 120px;
+  margin-top: -48px;
+  margin-left: 166px;
   opacity: 60%;
 
 }
@@ -170,11 +170,6 @@
 .shopTitle{
   height: 330px;
 }
-.banner-img-div{
-  width: 70%;
-  height: 100%;
-} 
-
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
@@ -186,7 +181,4 @@
     grid-template-columns: 25% 25% 25% 25% ;
     place-items: center; 
   }
-
-
- 
 }

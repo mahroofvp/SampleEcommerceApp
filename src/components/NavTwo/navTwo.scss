@@ -1,6 +1,9 @@
 .nav-two-main-div {
     height: 26px;
+    width: 0%9;
+    box-sizing: border-box;
     ul{
+
         display: flex;
         list-style: none;
         margin: 5px;
@@ -23,3 +26,14 @@
     
 }
 
+@media only screen and (max-width: 500px) {
+    .nav-two-main-div{
+      li{
+        color: red;
+        margin-right: 5px;
+      }
+    }
+}
+// @media only screen and (max-width: 991px) and (min-width:601px) {
+// @media only screen and (min-width: 992px) {}
+// @media only screen and (min-width: 992px) {}

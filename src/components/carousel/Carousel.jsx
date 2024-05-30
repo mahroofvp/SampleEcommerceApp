@@ -27,17 +27,18 @@ const Carousel = ()=>{
 
     
     return(
-<div className="carousel-div" >
+        <div className="carousel-main-div">
+            <div className="carousel-div" >
     
-<IoIosArrowDropleft className="img-slider-btn" onClick={leftBtnClick} style={{position:"absolute",zIndex:"1", height:"50px", width:"50px", marginLeft:"20px", left:"0" }}/>
-    { carouselData.map((item)=>{
+    <IoIosArrowDropleft className="img-slider-btn" onClick={leftBtnClick} style={{position:"absolute",zIndex:"1", height:"50px", width:"50px", marginLeft:"8%", left:"0", color:"white"}}/>
+        { carouselData.map((item)=>{
             return <img className="slider-img" style={{translate:`${-100*imgId}%`}}  src={item.img} key={item.id} alt="opps!!!" />
-        }
-    )
+            }
+        )
     }
-    <IoIosArrowDropright className="img-slider-btn" onClick={rightBtnClick} style={{position:"absolute", height:"50px", width:"50px", right:"0", marginRight:"20px"}}/>
-</div>
-
+        <IoIosArrowDropright className="img-slider-btn" onClick={rightBtnClick} style={{position:"absolute", height:"50px", width:"50px", right:"0", marginRight:"8%", color:"white"}}/>
+    </div>
+        </div>
     )
 }
 
