@@ -2,6 +2,7 @@ import React from 'react'
 import './footer.scss'
 const Footer = () => {
   return (
+  
     <div className='footer-main-div'>
         <div className='footer-sub-div'>
         <div className='first-div'>
@@ -29,6 +30,7 @@ const Footer = () => {
         </div>
         
     </div>
+   
   )
 }
 

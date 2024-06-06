@@ -21,7 +21,7 @@ return (
     <div className="navbar">
       <div ><Link to="/" style={{textDecoration:"none", opacity:"80%" ,marginLeft:"15px"}}> <img style={{height:"40px", width:"80px"}} src={logo} alt="" /></Link></div>
         <div className="links">
-          {!isSigninRoute && !isLoginRoute ? <div className='avatar-div' ><Link to={"/login"}><div style={{display:"flex", flexDirection:"row", alignItems:"center"}}><RxAvatar color='white' className='avatar-icon' /><h4>Sign in</h4></div></Link></div>:""} 
+          {!isSigninRoute && !isLoginRoute ? <div className='avatar-div' ><Link to={"/signin"}><div style={{display:"flex", flexDirection:"row", alignItems:"center"}}><RxAvatar color='white' className='avatar-icon' /><h4>Sign in</h4></div></Link></div>:""} 
            
           { !isHomeRoute ? <Link to="/" className='shop-link'> Shop </Link>:
             <Link to="/cart" >

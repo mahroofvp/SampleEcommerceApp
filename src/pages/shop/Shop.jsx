@@ -4,8 +4,10 @@ import {BiSearch} from "react-icons/bi"
 import SingleProduct from '../../components/product/SingleProduct'
 import Carousel from '../../components/carousel/Carousel'
 import Slider from '../../components/banksSlider/Slider'
-import banner from '../../../public/banner.png'
+import banner from '/banner.png'
 import './shop.scss'
+import Footer from '../../components/footer/Footer'
+import NavTwo from '../../components/NavTwo/NavTwo'
 
 
 
@@ -19,6 +21,7 @@ const [searchInput, setSearchInput] = useState("")
   
   return (
     <div className="shop">
+      <NavTwo/>
         <div className="shopTitle">
 
           <div className='banner-img-div'>
@@ -42,6 +45,7 @@ const [searchInput, setSearchInput] = useState("")
             )}
             </div>
             <Carousel/>
+            <Footer/>
            
     </div>
   )
