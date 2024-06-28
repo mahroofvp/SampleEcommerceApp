@@ -10,7 +10,7 @@ import { useSelector } from 'react-redux'
 function App() {
   
   const currentState = useSelector((store)=> store.form.currentState)
-
+const isSigninRoute = window.location.pathname === "/signin"
   return (
     <div className="App">
       <Router>
@@ -18,7 +18,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Shop/>}/>
           <Route path='/cart' element={<Cart/>}/>
-          <Route path={currentState === "login"? "/login":"/signin"}  element={<Login/>} />
+          <Route path={!isSigninRoute? "/login":"/signin"}  element={<Login/>} />
         </Routes>
       </Router>
     </div>

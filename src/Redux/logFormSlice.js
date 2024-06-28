@@ -1,6 +1,5 @@
 import {createSlice} from '@reduxjs/toolkit'
 
-
 const logFormSlice = createSlice({
     name:'form',
     initialState:{
