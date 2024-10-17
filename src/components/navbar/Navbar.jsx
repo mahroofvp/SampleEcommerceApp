@@ -5,13 +5,12 @@ import { RxAvatar } from "react-icons/rx"
 import { useContext } from 'react'
 import { ShopContext } from '../../context/ShopContext'
 import { PRODUCTS } from '../../products'
-import logo from '../../../public/Logo.png'
+import logo from '../../../public/logo.png'
 import './navbar.scss'
 
 
 const Navbar = () => {
 const {cartItems}= useContext(ShopContext)
-const navigate = useNavigate();
 const isSigninRoute = window.location.pathname === "/signin"
 const isLoginRoute = window.location.pathname === "/login"
 const isHomeRoute = window.location.pathname === '/'
@@ -19,11 +18,12 @@ let total = Object.values(cartItems).reduce((acc,val)=> acc+val,0)
 
 return (
     <div className="navbar">
-      <div ><Link to="/" style={{textDecoration:"none", opacity:"80%" ,marginLeft:"15px"}}> <img style={{height:"40px", width:"80px"}} src={logo} alt="" /></Link></div>
+      <div><Link to="/" style={{textDecoration:"none", opacity:"80%" ,marginLeft:"15px"}}> <img style={{height:"40px", width:"80px"}} src={logo} alt="" /></Link></div>
         <div className="links">
-          {!isSigninRoute && !isLoginRoute ? <div className='avatar-div' ><Link to={"/signin"}><div style={{display:"flex", flexDirection:"row", alignItems:"center"}}><RxAvatar color='white' className='avatar-icon' /><h4>Sign in</h4></div></Link></div>:""} 
-           
-          { !isHomeRoute ? <Link to="/" className='shop-link'> Shop </Link>:
+          {!isSigninRoute && !isLoginRoute ? <div className='avatar-div' >
+            <Link to={"/signin"}><div style={{display:"flex", flexDirection:"row", alignItems:"center"}}>
+            <RxAvatar color='white' className='avatar-icon' /><h4>Sign in</h4></div></Link></div>:""} 
+          { !isHomeRoute ? <Lk to="/" className='shop-link'> Shop </Lk>:
             <Link to="/cart" >
            {
             
