@@ -8,11 +8,13 @@ import banner from '/banner.png';
 import './shop.scss';
 import Footer from '../../components/footer/Footer';
 import NavTwo from '../../components/NavTwo/NavTwo';
+import PosterImg from '../../components/posterImg/PosterImg';
 
 const Shop = () => {
   const [searchInput, setSearchInput] = useState('');
   const [category, setCategory] = useState('all');
-  const [filterOpen, setFilterOpen] = useState(false); // State to toggle filter visibility
+  const [filterOpen, setFilterOpen] = useState(false); 
+
 
   const handleChange = (e) => {
     setSearchInput(e.target.value);
@@ -27,7 +29,7 @@ const Shop = () => {
 
   const filteredProducts = PRODUCTS.filter((product) => {
     const matchesCategory = category === 'all' || product.category === category;
-    const matchesSearch = product.category.toLowerCase().includes(searchInput.toLowerCase());
+    const matchesSearch = product.productName.toLowerCase().includes(searchInput.toLowerCase());
     return matchesCategory && matchesSearch;
   });
 
@@ -76,6 +78,7 @@ const Shop = () => {
                 </div>
               )}
             </div>
+            <PosterImg/>
             <Carousel />
             <Footer />
           </div>

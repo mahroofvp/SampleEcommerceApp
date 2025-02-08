@@ -1,0 +1,11 @@
+.poster-img-main-div{
+    width: 80%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+}
+.poster-img-main-div > img{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
